@@ -1,1 +1,104 @@
-New file
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>Eurostar-bg</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>  <meta content="initial-scale=1.0, 
+    width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <style type="text/css">
+body{ 
+  margin: 0px;
+  padding: 0px;
+  background:
+  -webkit-radial-gradient(black 15%, transparent 16%) 0 0,
+  -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px,
+  -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-size:7px 7px; /* 8px 8px | 16px 16px */
+  background-color:#282828;
+
+}
+header{
+  padding: 1px;  
+  xbackground-color: #02538E;
+  background-image: url(noise.png);
+  background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Red */
+  xbackground: -webkit-linear-gradient(top, #627d4d 0%,#1f3b08 100%); /* Green */
+  xbackground: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Blue */
+  text-shadow: 1px 1px 4px #000; 
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Monospace;
+  color: white;
+  box-shadow: 0px 0px 8px 1px #000, inset 1px 1px 15px 0px black; 
+}
+
+#log{
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    color:white;
+    background-color: maroon;
+    background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Red */
+    box-shadow: 0px 0px 8px 1px #000, inset 1px 1px 5px 0px black; 
+    width:100%;
+    text-align:center;
+}
+.content{
+    background-color: rgba(255,255,255,.2);
+    padding: 5px;
+    text-indent: 5px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 4px #000; 
+    border: 2px solid black;
+}
+.content h3{
+    margin: 0px;
+    padding: 0px;
+}
+button{
+    display: inline;
+    background-color:#282828;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}  </style>
+ </head>
+ <body>
+  <header>
+  <h1>
+   Eurostar-bg</h1>
+  </header>
+  <div class="content">
+   <h3 style="text-align: center;">
+    Lorem ipsum dolores sit amet concicture adipic.</h3>
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <button>Reconnect</button></div>
+  <div class="content">
+   <br />
+   &nbsp;</div>
+<!-- <div id="log"></div> --><script>
+        $('#log').html($(window).width()+"x"+$(window).height());
+        $(window).resize(function() {
+          $('#log').html($(window).width()+"x"+$(window).height());
+        });
+
+    </script> </body>
+</html>
